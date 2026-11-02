@@ -1,0 +1,12 @@
+/target
+**/*.rs.bk
+*.log
+mt7601u-log.txt
+.DS_Store
+
+# Reference clones (Linux driver + firmware), not part of this project.
+/mt7601u-refs/
+/hostap-refs/
+
+# AI
+.commandcode

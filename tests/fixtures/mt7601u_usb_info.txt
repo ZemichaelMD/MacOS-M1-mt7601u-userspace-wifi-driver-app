@@ -1,0 +1,15 @@
+Captured from `system_profiler SPUSBDataType` on the target Apple Silicon Mac.
+Serial-number value removed. This fixture pins the identity facts the tests
+assert against.
+
+802.11 n WLAN:
+
+  Location ID:	0x01140000
+  Connection Type:	Removable
+  Manufacturer:	MediaTek
+  Serial Number:	<redacted>
+  Link Speed:	480 Mb/s
+  USB Vendor ID:	0x148f
+  USB Product ID:	0x7601
+  USB Product Version:	0x0000
+  Power Allocated:	0.8 W (160 mA)

@@ -1,0 +1,50 @@
+[package]
+name = "mt7601u-macos"
+version = "0.1.0"
+edition = "2021"
+description = "User-space USB diagnostics and Wi-Fi GUI for the MediaTek MT7601U on Apple Silicon macOS"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[dependencies]
+aes = "0.8"
+anyhow = "1.0.104"
+cmac = "0.7"
+eframe = { version = "0.36", features = ["wgpu"] }
+egui = "0.36"
+hmac = "0.12"
+libc = "0.2.190"
+md-5 = "0.10"
+p256 = "0.13"
+pbkdf2 = "0.12"
+png = "0.18"
+raw-window-handle = "0.6"
+rusb = "0.9.4"
+sha1 = "0.10"
+sha2 = "0.10"
+thiserror = "2.0.20"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6"
+objc2-app-kit = { version = "0.3", features = [
+    "NSApplication",
+    "NSButton",
+    "NSCell",
+    "NSControl",
+    "NSFont",
+    "NSFontDescriptor",
+    "NSImage",
+    "NSMenu",
+    "NSMenuItem",
+    "NSStatusBar",
+    "NSStatusBarButton",
+    "NSStatusItem",
+    "NSView",
+    "NSWindow",
+] }
+objc2-foundation = { version = "0.3", features = ["NSData", "NSDate", "NSObject", "NSString", "NSTimer"] }
+
+[dev-dependencies]
